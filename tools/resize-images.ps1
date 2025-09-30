@@ -25,7 +25,7 @@ Get-ChildItem -Path $folder -Filter *.png -File | ForEach-Object {
         Write-Host "Resized: $($_.Name) -> ${width}x${height}"
     }
     catch {
-        Write-Warning "Failed to resize $file: $_"
+        Write-Warning ("Failed to resize {0}: {1}" -f $file, $_.Exception.Message)
     }
 }
 
