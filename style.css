@@ -38,3 +38,27 @@ main.container { max-width: 960px; }
 /* Navbar: keep it dark but remove Bootstrap's default background so our color shows */
 .navbar { background: #000 !important; }
 
+/* Front page large title */
+.site-title {
+   font-family: 'Oswald', sans-serif;
+   font-size: 2.2rem;
+   color: var(--yellow);
+   margin-bottom: 1rem;
+}
+
+.intro-title {
+   color: var(--yellow);
+   font-family: 'Oswald', sans-serif;
+   font-size: 1.15rem;
+   margin-top: 0.5rem;
+}
+
+/* Big icons on the front page */
+.front-icon { width: 220px; height: auto; }
+
+/* Left-floating logo for interior pages */
+.page-logo { width: 180px; height: auto; margin-top: 0.2rem; }
+
+/* Ensure icons and links are visible against the black background */
+a { color: var(--yellow); }
+
