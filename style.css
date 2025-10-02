@@ -1,4 +1,40 @@
-/* Intentionally minimal: Bootstrap 5 is used for layout.
-   Keep this file linked so students can add custom overrides if desired. */
+/* Theme for WOD 4A: yellow-on-black, Oswald headings and Open Sans body */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
 
-body { margin-top: 0; }
+:root {
+   --bg: #000000;
+   --yellow: #ffd400; /* bright yellow */
+}
+
+html, body {
+   height: 100%;
+}
+
+body {
+   margin: 0;
+   background: var(--bg);
+   color: var(--yellow);
+   font-family: 'Open Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+h1, h2, h3, h4 {
+   font-family: 'Oswald', 'Segoe UI', Arial, sans-serif;
+   color: var(--yellow);
+}
+
+a { color: var(--yellow); }
+a:hover { color: #ffffff; text-decoration: underline; }
+
+/* Make it obvious links and icon images are clickable */
+a, a img { cursor: pointer; }
+
+/* Slight spacing/typography for the main content */
+main.container { max-width: 960px; }
+.lead { color: var(--yellow); }
+
+/* Ensure floated images have breathing room */
+.float-start { margin-right: 0.8rem; }
+
+/* Navbar: keep it dark but remove Bootstrap's default background so our color shows */
+.navbar { background: #000 !important; }
+
