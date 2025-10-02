@@ -54,10 +54,13 @@ main.container { max-width: 960px; }
 }
 
 /* Big icons on the front page */
-.front-icon { width: 220px; height: auto; }
+.front-icon { width: 260px; height: auto; }
 
 /* Left-floating logo for interior pages */
-.page-logo { width: 180px; height: auto; margin-top: 0.2rem; }
+.page-logo { width: 180px; height: auto; margin-top: 0.2rem; margin-right: 1rem; }
+
+/* Page body paragraphs in Times New Roman and yellow */
+p { font-family: 'Times New Roman', Times, serif; color: var(--yellow); }
 
 /* Ensure icons and links are visible against the black background */
 a { color: var(--yellow); }
