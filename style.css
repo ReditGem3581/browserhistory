@@ -1,18 +1,4 @@
-/* Kept intentionally minimal for Bootstrap WOD */
+/* Intentionally minimal: Bootstrap 5 is used for layout.
+   Keep this file linked so students can add custom overrides if desired. */
+
 body { margin-top: 0; }
-
-/* Navigation bar (horizontal) */
-.nav { background: #f0f0f0; padding: 8px 50px; margin-bottom: 16px; }
-.nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 20px; }
-.nav a { color: DarkBlue; text-decoration: none; font-weight: 600; }
-
-/* Three column layout for the browser sections */
-.columns { display: flex; gap: 20px; justify-content: space-between; }
-.columns section { width: 300px; box-sizing: border-box; }
-
-/* Responsive fallback: stack columns on narrow screens */
-@media (max-width: 960px) {
-  .columns { flex-direction: column; align-items: stretch; }
-  .nav { padding-left: 20px; padding-right: 20px; }
-  body { margin: 10px 20px; }
-}
